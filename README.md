@@ -1,2 +1,2 @@
 # IC3
-Information and Coding project 3
+Information and Coding Project 3
