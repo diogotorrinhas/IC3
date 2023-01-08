@@ -14,7 +14,7 @@ int main(int argc, char** argv)
     char c ='z'; //Option model to choose
 
     while(c != 'y' & c != 'n') {
-        cout << "Carregar modelos (y/n): ";
+        cout << "Carregar modelos existentes? (y/n): ";
         cin >> c;
     }
 
