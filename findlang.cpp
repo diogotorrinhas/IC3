@@ -9,10 +9,9 @@ int main(int argc, char** argv)
         return 0; 
     }
 
-    //Context order and alpha
-    int k = -1;
+    int k = -1; //context order
     float a = 0;
-    char c ='z';
+    char c ='z'; //Option model to choose
 
     while(c != 'y' & c != 'n') {
         cout << "Carregar modelos (y/n): ";

@@ -35,7 +35,7 @@ int main(int argc, char** argv)
         }
     }
     
-    //Variable to store the model
+    
     map<string, map<char, int>> model;
 
     //Load model and processing it
@@ -44,18 +44,16 @@ int main(int argc, char** argv)
     cout << "Begin processing..." << endl;
     if(c == 'y') {
         f.loadModel(model, argv[1]);
-        //f.loadModel(model, argv[1]);
     }
     else {
         f.saveModel(model, argv[1]);
-        //f.loadExistingModel(model, argv[1]);
     }
     cout << "Processing Model ended sucessfully!" << endl;
 
     //Number of bits required to compress second file
     f.estimateDistanceEntropy(model, argv[2]);
     cout << "Estimated number of bits to compress file: " << f.distance<< endl;
-    cout << "Estimated number of bits per character: " << f.distance/f.nLetters << endl; // Acho q este não é necessário
+    cout << "Estimated number of bits per character: " << f.distance/f.nLetters << endl; 
 
     return 0;
 }
