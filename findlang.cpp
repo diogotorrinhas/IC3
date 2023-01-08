@@ -1,9 +1,5 @@
 #include "fcm.cpp"
 
-// ./findlang ../models/PT.utf8 ../models/ENG.utf8 ../models/ESP.utf8 ../models/GER.utf8 ../models/IT.utf8 ../models/FR.utf8 ../models/SWE.utf8 ../models/SWE.utf8 ../models/DAN.utf8  ../models/simple.txt
-// ./findlang ../models/ARAB.utf8 ../models/BG.utf8 ../models/BOSN.utf8 ../models/CZ.utf8 ../models/DAN.utf8 ../models/ENG.utf8 ../models/ESP.utf8 ../models/EST.utf8 ../models/FI.utf8 ../models/FR.utf8 ../models/GER.utf8 ../models/GK.utf8 ../models/IS.utf8 ../models/IT.utf8 ../models/JPN.utf8 ../models/LT.utf8 ../models/MAC.utf8 ../models/NOR.utf8 ../models/PT.utf8 ../models/RO.utf8 ../models/RU.utf8 ../models/SK.utf8 ../models/SWE.utf8 ../models/TURK.utf8 ../models/books/lusiadas.txt
-// ./findlang ../models/ARABmodel.txt ../models/BGmodel.txt ../models/BOSNmodel.txt ../models/CZmodel.txt ../models/DANmodel.txt ../models/ENGmodel.txt ../models/ESPmodel.txt ../models/ESTmodel.txt ../models/FImodel.txt ../models/FRmodel.txt ../models/GERmodel.txt ../models/GKmodel.txt ../models/ISmodel.txt ../models/ITmodel.txt ../models/JPNmodel.txt ../models/LTmodel.txt ../models/MACmodel.txt ../models/NORmodel.txt ../models/PTmodel.txt ../models/ROmodel.txt ../models/RUmodel.txt ../models/SKmodel.txt ../models/SWEmodel.txt ../models/TURKmodel.txt ../models/books/lusiadas.txt
-// ./findlang ../models/ARABmodel.txt ../models/BGmodel.txt ../models/SKmodel.txt ../models/PTmodel.txt ../models/SWEmodel.txt ../models/TURKmodel.txt ../models/lusiadas.txt
 
 int main(int argc, char** argv)
 {
