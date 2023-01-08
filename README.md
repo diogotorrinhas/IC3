@@ -15,3 +15,4 @@ Information and Coding project 3
 ### FINDLANG:
 #### Comandos de compilação:
 > g++ findlang.cpp -o findlang
+> ./findlang BOSN.utf8 ENG.utf8 ESP.utf8 FI.utf8 GER.utf8 IT.utf8 LT.utf8 PT.utf8 RU.utf8 SWE.utf8 TURK.utf8 ModelTextoSimplesTeste.txt 
