@@ -4,16 +4,14 @@ Information and Coding project 3
 ## Comandos de Compilação e Resultados
 
 
-### FCM:
+### FCM/TESTEFCM:
 #### Comandos de compilação:
-> g++ ex1.cpp -o ex1 $(pkg-config --libs --cflags opencv4)
-
->./ex1 image1.jpeg out.jpeg
+> g++ testefcm.cpp -o testefcm
 
 ### LANG:
 #### Comandos de compilação:
-> g++ ex2.cpp -o ex2 $(pkg-config --libs --cflags opencv4)
+> g++ lang.cpp -o lang
 
 ### FINDLANG:
 #### Comandos de compilação:
-> g++ ex2.cpp -o ex2 $(pkg-config --libs --cflags opencv4)
+> g++ findlang.cpp -o findlang
