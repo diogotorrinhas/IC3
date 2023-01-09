@@ -7,6 +7,11 @@ Information and Coding project 3
 ### FCM/TESTEFCM:
 #### Comandos de compilação:
 > g++ testefcm.cpp -o testefcm
+>
+Estes comandos é para criar modelo de uma determinado linguagem/texto (opção n) e
+calcular entropia do modelo e distância e entropia estimada em relação a um certo texto
+(por exemplo o da Carochinha, TextoSimplesTeste.txt passado como segundo argumento)
+> ./testefcm PT.utf8 TextoSimplesTeste.txt
 
 ### LANG:
 #### Comandos de compilação:
