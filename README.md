@@ -9,7 +9,7 @@ Information and Coding project 3
 
 >./modelEntropy PT.utf8
 
-Estes comandos é para calcular um modelo a partir de um ficheiro de texto (neste caso PT.utf8 que representa a lingua portuguesa)
+Estes comandos são para calcular um modelo a partir de um ficheiro de texto (neste caso PT.utf8 que representa a lingua portuguesa)
 
 ### FCM/TESTEFCM:
 #### Comandos de compilação:
