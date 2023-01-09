@@ -31,9 +31,23 @@ calcular entropia do modelo e distância e entropia estimada em relação a um c
 ### LANG:
 #### Comandos de compilação:
 > g++ lang.cpp -o lang
+>
+> ./lang ModelPT.txt OsMaias.txt
+Caso o modelo já tenha sido criado ou
+> ./lang ENG.utf8 OsMaias.txt
+Caso o modelo ainda não tenha sido criado
+P.S- Os dois comandos acima são exemplos de maneiras de correr o programa.
 
 ### FINDLANG:
 #### Comandos de compilação:
 > g++ findlang.cpp -o findlang
 > 
-> ./findlang BOSN.utf8 ENG.utf8 ESP.utf8 FI.utf8 GER.utf8 IT.utf8 LT.utf8 PT.utf8 RU.utf8 SWE.utf8 TURK.utf8 TextoSimplesTeste.txt 
+> ./findlang BOSN.utf8 ENG.utf8 ESP.utf8 FI.utf8 GER.utf8 IT.utf8 LT.utf8 PT.utf8 RU.utf8 SWE.utf8 TURK.utf8 TextoSimplesTeste.txt
+
+### LOCATELANG:
+#### Comandos de compilação:
+> g++ locatelang.cpp -o locatelang
+>
+> ./locatelang ModelENG.txt ModelPT.txt ModelESP.txt ModelRU.txt ModelARAB.txt VariasLinguas.txt
+Este comando é um exemplo e é para o caso de modelos já tiverem sido criados. Se os modelos não tiverem sido criados basta substituir esses modelos por ficheiros de texto e posteriormente, depois de executar o comando, vão ser criados os modelos para cada um desses ficheiros.
+
