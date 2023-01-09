@@ -1,6 +1,9 @@
 # IC3
 Information and Coding project 3
 
+## Video 
+> ficheiro IC3Video.mp4
+
 ## Comandos de Compilação e Resultados
 
 ### FCM/modelEntropy:
