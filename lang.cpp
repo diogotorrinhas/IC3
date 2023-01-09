@@ -38,10 +38,8 @@ int main(int argc, char** argv)
     
     map<string, map<char, int>> model;
 
-    //Load model and processing it
     fcm f = fcm(k, alpha);
 
-    cout << "Begin processing..." << endl;
     if(c == 'y') {
         f.loadModel(model, argv[1]);
     }
@@ -53,7 +51,6 @@ int main(int argc, char** argv)
     //Number of bits required to compress second file
     f.estimateDistanceEntropy(model, argv[2]);
     cout << "Estimated number of bits to compress file: " << f.distance<< endl;
-    cout << "Estimated number of bits per character: " << f.distance/f.nLetters << endl; 
 
     return 0;
 }
