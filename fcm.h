@@ -55,6 +55,16 @@ class fcm {
          * @param model data structure that will represent the model and will be loaded with information
          * @param ficheiro source file
          */
+         
+         void estimateDistanceEntropyLocateLang(map<string, map<char, int>> &model, char *segment);
+        
+        /**
+         * FCM model loader
+         * @brief load a model from a given file name
+         * @param model data structure that will represent the model and will be loaded with information
+         * @param ficheiro source file
+         */
+         
         void saveModel(map<string, map<char, int>> &model, char *ficheiro);
 
         /**

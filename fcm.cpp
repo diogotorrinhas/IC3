@@ -159,6 +159,59 @@ void fcm::estimateDistanceEntropy(map<string, map<char, int>> &model, char *fich
     nLetters = count;
 }
 
+void fcm::estimateDistanceEntropyLocateLang(map<string, map<char, int>> &model, char *segment){
+    string palavra;
+    int i = 0;
+    for (i = 0; i < k; i++){
+        //readChar(segment, &aux); //Ler o segmento
+        palavra.append(1, segment[i]);
+    }
+
+    int nocurrencias, totalOcurrencias;
+    double sumH = 0;
+    int count = 0;
+    do{
+        //readChar(segment, &aux); //Ler o segmento
+        i++;
+        count++;
+
+        totalOcurrencias = 0;
+        // se modelo contem palavra
+        if(model.count(palavra) > 0){
+            map<char, int> &occur = model[palavra];
+            // se palavra tem o char que procuramos
+            if(occur.count(segment[i]) > 0){
+                nocurrencias = occur[segment[i]];
+            }else{ 
+                nocurrencias = 0;
+            }
+            for(auto i : occur){
+                // contar o número total de entradas para a palavra
+                totalOcurrencias += i.second;
+            }
+        }else{ 
+            nocurrencias = 0;
+            totalOcurrencias = 0;
+        }
+
+        sumH += -log2((nocurrencias + alfa) / (totalOcurrencias + (alfa * 27)));  // 27 = tamanho do alfabeto
+
+        // update da palavra
+        palavra.erase(0,1); // remove primeiro caracter
+        palavra.append(1, segment[i]);
+    }while(segment[i]!='\0'); 
+
+    // guarda distancia estimada
+    distance = sumH;
+
+    // guarda entropia estimada
+    estimatedEntropy = sumH / count;
+
+    // Atualiza número de caracteres no ficheiro
+    //nLetters = count;
+}
+
+
 void fcm::loadModel(map<string, map<char, int>> &model, char *ficheiro){
 
     ifstream file(ficheiro);
